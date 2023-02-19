@@ -9,25 +9,24 @@
 /* Begin PBXBuildFile section */
 		B13C3AC729A12F2800104D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C3AC629A12F2800104D6A /* AppDelegate.swift */; };
 		B13C3AC929A12F2800104D6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C3AC829A12F2800104D6A /* SceneDelegate.swift */; };
-		B13C3ACB29A12F2800104D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C3ACA29A12F2800104D6A /* ViewController.swift */; };
+		B13C3ACB29A12F2800104D6A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C3ACA29A12F2800104D6A /* ProfileVC.swift */; };
 		B13C3ACE29A12F2800104D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13C3ACC29A12F2800104D6A /* Main.storyboard */; };
 		B13C3AD029A12F2A00104D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13C3ACF29A12F2A00104D6A /* Assets.xcassets */; };
 		B13C3AD329A12F2A00104D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13C3AD129A12F2A00104D6A /* LaunchScreen.storyboard */; };
 		B13C3ADC29A130FA00104D6A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B13C3ADB29A130FA00104D6A /* Moya */; };
 		B13C3ADE29A130FA00104D6A /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B13C3ADD29A130FA00104D6A /* ReactiveMoya */; };
 		B13C3AE029A130FA00104D6A /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B13C3ADF29A130FA00104D6A /* RxMoya */; };
-		B1434EA729A1BECD002249CD /* PhotosAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1434EA629A1BECD002249CD /* PhotosAlbum.swift */; };
+		B1434EA729A1BECD002249CD /* AlbumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1434EA629A1BECD002249CD /* AlbumDetails.swift */; };
 		B1434EAA29A1BFCA002249CD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B1434EA929A1BFCA002249CD /* Kingfisher */; };
 		B1434EAD29A1C0BA002249CD /* PhotoAlumCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1434EAB29A1C0BA002249CD /* PhotoAlumCVC.swift */; };
 		B1434EAE29A1C0BA002249CD /* PhotoAlumCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1434EAC29A1C0BA002249CD /* PhotoAlumCVC.xib */; };
-		B15C0F5F29A138030034EEA6 /* AlbumsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C0F5E29A138030034EEA6 /* AlbumsVC.swift */; };
+		B15C0F5F29A138030034EEA6 /* AlbumDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C0F5E29A138030034EEA6 /* AlbumDetailsVC.swift */; };
 		B15D5C7D29A15F7900B43222 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D5C7C29A15F7900B43222 /* ProfileViewModel.swift */; };
 		B15D5C8029A1606C00B43222 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B15D5C7F29A1606C00B43222 /* RxCocoa */; };
 		B15D5C8229A1606C00B43222 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B15D5C8129A1606C00B43222 /* RxRelay */; };
 		B15D5C8429A1606C00B43222 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B15D5C8329A1606C00B43222 /* RxSwift */; };
 		B15D5C8729A160B900B43222 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D5C8629A160B900B43222 /* User.swift */; };
-		B15D5CB629A1905D00B43222 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B15D5CB529A1905D00B43222 /* SwiftyJSON */; };
-		B15D5CBF29A1A7EF00B43222 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D5CBE29A1A7EF00B43222 /* Album.swift */; };
+		B15D5CBF29A1A7EF00B43222 /* UserAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D5CBE29A1A7EF00B43222 /* UserAlbum.swift */; };
 		B15D5CC229A1AF8700B43222 /* AlbumTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D5CC029A1AF8700B43222 /* AlbumTVC.swift */; };
 		B15D5CC329A1AF8700B43222 /* AlbumTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15D5CC129A1AF8700B43222 /* AlbumTVC.xib */; };
 		B196C9AA29A1C1550007136E /* AlbumDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196C9A929A1C1550007136E /* AlbumDetailsViewModel.swift */; };
@@ -39,18 +38,18 @@
 		B13C3AC329A12F2800104D6A /* Task_Bosta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_Bosta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13C3AC629A12F2800104D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B13C3AC829A12F2800104D6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B13C3ACA29A12F2800104D6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B13C3ACA29A12F2800104D6A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B13C3ACD29A12F2800104D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B13C3ACF29A12F2A00104D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B13C3AD229A12F2A00104D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B13C3AD429A12F2A00104D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1434EA629A1BECD002249CD /* PhotosAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAlbum.swift; sourceTree = "<group>"; };
+		B1434EA629A1BECD002249CD /* AlbumDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetails.swift; sourceTree = "<group>"; };
 		B1434EAB29A1C0BA002249CD /* PhotoAlumCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlumCVC.swift; sourceTree = "<group>"; };
 		B1434EAC29A1C0BA002249CD /* PhotoAlumCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoAlumCVC.xib; sourceTree = "<group>"; };
-		B15C0F5E29A138030034EEA6 /* AlbumsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsVC.swift; sourceTree = "<group>"; };
+		B15C0F5E29A138030034EEA6 /* AlbumDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVC.swift; sourceTree = "<group>"; };
 		B15D5C7C29A15F7900B43222 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B15D5C8629A160B900B43222 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B15D5CBE29A1A7EF00B43222 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B15D5CBE29A1A7EF00B43222 /* UserAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbum.swift; sourceTree = "<group>"; };
 		B15D5CC029A1AF8700B43222 /* AlbumTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTVC.swift; sourceTree = "<group>"; };
 		B15D5CC129A1AF8700B43222 /* AlbumTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTVC.xib; sourceTree = "<group>"; };
 		B196C9A929A1C1550007136E /* AlbumDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -64,7 +63,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15D5C8429A1606C00B43222 /* RxSwift in Frameworks */,
-				B15D5CB629A1905D00B43222 /* SwiftyJSON in Frameworks */,
 				B15D5C8229A1606C00B43222 /* RxRelay in Frameworks */,
 				B13C3AE029A130FA00104D6A /* RxMoya in Frameworks */,
 				B1434EAA29A1BFCA002249CD /* Kingfisher in Frameworks */,
@@ -123,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				B15D5C8629A160B900B43222 /* User.swift */,
-				B15D5CBE29A1A7EF00B43222 /* Album.swift */,
-				B1434EA629A1BECD002249CD /* PhotosAlbum.swift */,
+				B15D5CBE29A1A7EF00B43222 /* UserAlbum.swift */,
+				B1434EA629A1BECD002249CD /* AlbumDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,8 +130,8 @@
 		B15D5CB829A1A60700B43222 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B13C3ACA29A12F2800104D6A /* ViewController.swift */,
-				B15C0F5E29A138030034EEA6 /* AlbumsVC.swift */,
+				B13C3ACA29A12F2800104D6A /* ProfileVC.swift */,
+				B15C0F5E29A138030034EEA6 /* AlbumDetailsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,7 +188,6 @@
 				B15D5C7F29A1606C00B43222 /* RxCocoa */,
 				B15D5C8129A1606C00B43222 /* RxRelay */,
 				B15D5C8329A1606C00B43222 /* RxSwift */,
-				B15D5CB529A1905D00B43222 /* SwiftyJSON */,
 				B1434EA929A1BFCA002249CD /* Kingfisher */,
 			);
 			productName = Task_Bosta;
@@ -224,7 +221,6 @@
 			packageReferences = (
 				B13C3ADA29A130FA00104D6A /* XCRemoteSwiftPackageReference "Moya" */,
 				B15D5C7E29A1606C00B43222 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				B15D5CB429A1905D00B43222 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				B1434EA829A1BFCA002249CD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B13C3AC429A12F2800104D6A /* Products */;
@@ -261,11 +257,11 @@
 				B1A106A329A27A4A00784D08 /* Service.swift in Sources */,
 				B15D5C7D29A15F7900B43222 /* ProfileViewModel.swift in Sources */,
 				B1A106A629A27E9F00784D08 /* NetworkManager.swift in Sources */,
-				B13C3ACB29A12F2800104D6A /* ViewController.swift in Sources */,
+				B13C3ACB29A12F2800104D6A /* ProfileVC.swift in Sources */,
 				B13C3AC729A12F2800104D6A /* AppDelegate.swift in Sources */,
-				B1434EA729A1BECD002249CD /* PhotosAlbum.swift in Sources */,
-				B15C0F5F29A138030034EEA6 /* AlbumsVC.swift in Sources */,
-				B15D5CBF29A1A7EF00B43222 /* Album.swift in Sources */,
+				B1434EA729A1BECD002249CD /* AlbumDetails.swift in Sources */,
+				B15C0F5F29A138030034EEA6 /* AlbumDetailsVC.swift in Sources */,
+				B15D5CBF29A1A7EF00B43222 /* UserAlbum.swift in Sources */,
 				B13C3AC929A12F2800104D6A /* SceneDelegate.swift in Sources */,
 				B15D5C8729A160B900B43222 /* User.swift in Sources */,
 				B15D5CC229A1AF8700B43222 /* AlbumTVC.swift in Sources */,
@@ -512,14 +508,6 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		B15D5CB429A1905D00B43222 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -557,11 +545,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B15D5C7E29A1606C00B43222 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		B15D5CB529A1905D00B43222 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B15D5CB429A1905D00B43222 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ProfileVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task_Bosta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="BYZ-38-t0r" customClass="ProfileVC" customModule="Task_Bosta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="969.23076923076917" y="-28.436018957345969"/>
         </scene>
-        <!--AlbumsVC-->
+        <!--Album DetailsVC-->
         <scene sceneID="muZ-56-YgL">
             <objects>
-                <viewController storyboardIdentifier="AlbumsVC" id="2oe-Km-tZ4" customClass="AlbumsVC" customModule="Task_Bosta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlbumDetailsVC" id="2oe-Km-tZ4" customClass="AlbumDetailsVC" customModule="Task_Bosta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AiD-wC-SvI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

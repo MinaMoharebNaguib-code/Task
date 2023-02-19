@@ -1,15 +1,13 @@
 //
-//  PhotosAlbum.swift
+//  AlbumDetails.swift
 //  Task_Bosta
 //
 //  Created by Mina Mohareb on 19/02/2023.
 //
 
 import Foundation
-import SwiftyJSON
-
 // MARK: - PhotosAlbum
-class PhotosAlbum: Codable {
+class AlbumDetails: Codable {
     let albumID, id: Int
     let title: String
     let url, thumbnailURL: String

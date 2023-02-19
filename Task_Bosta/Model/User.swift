@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
-
 // MARK: - User
 class User: Codable {
     let id: Int
@@ -26,17 +24,7 @@ class User: Codable {
         self.website = website
         self.company = company
     }
-    init(json: JSON)
-    {
-        self.name = json["name"].stringValue
-        self.id = json["id"].intValue
-        self.username = json["username"].stringValue
-        self.email = json["email"].stringValue
-        self.phone = json["phone"].stringValue
-        self.website = json["website"].stringValue
-        self.address = Address(json: json["address"])
-        self.company = Company(json: json["company"])
-    }
+
 }
 
 // MARK: - Address
@@ -51,14 +39,7 @@ class Address: Codable {
         self.zipcode = zipcode
         self.geo = geo
     }
-    init(json: JSON)
-    {
-        self.street = json["street"].stringValue
-        self.suite = json["suite"].stringValue
-        self.city = json["city"].stringValue
-        self.zipcode = json["zipcode"].stringValue
-        self.geo = Geo(json: json["geo"])
-    }
+
 }
 
 // MARK: - Geo
@@ -69,11 +50,7 @@ class Geo: Codable {
         self.lat = lat
         self.lng = lng
     }
-    init(json: JSON)
-    {
-        self.lat = json["lat"].stringValue
-        self.lng = json["lng"].stringValue
-    }
+
 }
 
 // MARK: - Company
@@ -84,11 +61,5 @@ class Company: Codable {
         self.name = name
         self.catchPhrase = catchPhrase
         self.bs = bs
-    }
-    init(json: JSON)
-    {
-        self.name = json["name"].stringValue
-        self.catchPhrase = json["catchPhrase"].stringValue
-        self.bs = json["bs"].stringValue
     }
 }

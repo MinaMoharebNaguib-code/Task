@@ -15,42 +15,10 @@ class AlbumDetailsViewModel
     private let networkManager = NetworkManager()
     var loadingBehavior = BehaviorRelay<Bool>(value: false)
     // Album Details
-    var albumDetailsModelSubject = PublishSubject<[PhotosAlbum]>()
-    var albumDetailsObservable : Observable<[PhotosAlbum]>{
+    var albumDetailsModelSubject = PublishSubject<[AlbumDetails]>()
+    var albumDetailsObservable : Observable<[AlbumDetails]>{
         return albumDetailsModelSubject
     }
-    
-//    func getPhotosAlbum(albumId: Int)
-//    {
-//        loadingBehavior.accept(true)
-//        guard let getURL = URL(string: "https://jsonplaceholder.typicode.com/photos?albumId=\(albumId)") else {return}
-//        let header = ["Content-Type":"application/json; charset=utf-8"]
-//        let AlamoHeader = HTTPHeaders(header)
-//
-//        AF.request(getURL, method: .get, parameters: nil, encoding: URLEncoding.default, headers: AlamoHeader).responseJSON { (response) in
-//
-//            switch response.result{
-//            case .success(_):
-//
-//                guard let data = response.data else {return}
-//
-//                do{
-//                    let photosAlbum = try JSONDecoder().decode([PhotosAlbum].self, from: data)
-//                    self.albumDetailsModelSubject.onNext(photosAlbum)
-//
-//                }catch{
-//                    print(error.localizedDescription)
-//                    self.loadingBehavior.accept(false)
-//                }
-//
-//
-//            case .failure(_):
-//                print(response.error?.localizedDescription ?? "")
-//                self.loadingBehavior.accept(false)
-//            }
-//
-//            }
-//    }
     
     func getAlbumDetails(albumId: Int)
     {

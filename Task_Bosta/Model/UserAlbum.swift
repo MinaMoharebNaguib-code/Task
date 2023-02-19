@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import SwiftyJSON
 // MARK: - Album
-class Album: Codable {
+class UserAlbum: Codable {
     let userID, id: Int
     let title: String
 

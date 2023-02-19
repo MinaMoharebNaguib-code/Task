@@ -34,8 +34,8 @@ class ProfileViewModel{
     }
     
     // Albums
-    var albumsModelSubject = PublishSubject<[Album]>()
-    var albumsModelObservable: Observable<[Album]>{
+    var albumsModelSubject = PublishSubject<[UserAlbum]>()
+    var albumsModelObservable: Observable<[UserAlbum]>{
         return albumsModelSubject
     }
     

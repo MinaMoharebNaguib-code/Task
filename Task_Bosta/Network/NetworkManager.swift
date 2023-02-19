@@ -12,8 +12,8 @@ protocol Networkable {
     var provider: MoyaProvider<Service> { get }
 
     func fetchUser(id: Int, completion: @escaping (Result<User, Error>) -> ())
-    func fetchUserAlbums(userId: Int, completion: @escaping (Result<[Album], Error>) -> ())
-    func fetchAlbumDetails(albumId: Int, completion: @escaping (Result<[PhotosAlbum], Error>) -> ())
+    func fetchUserAlbums(userId: Int, completion: @escaping (Result<[UserAlbum], Error>) -> ())
+    func fetchAlbumDetails(albumId: Int, completion: @escaping (Result<[AlbumDetails], Error>) -> ())
 }
 
 
@@ -25,11 +25,11 @@ class NetworkManager: Networkable{
         request(target: .readUser(id: id), completion: completion)
     }
     
-    func fetchUserAlbums(userId: Int, completion: @escaping (Result<[Album], Error>) -> ()) {
+    func fetchUserAlbums(userId: Int, completion: @escaping (Result<[UserAlbum], Error>) -> ()) {
         request(target: .readAlbum(userId: userId), completion: completion)
     }
     
-    func fetchAlbumDetails(albumId: Int, completion: @escaping (Result<[PhotosAlbum], Error>) -> ()) {
+    func fetchAlbumDetails(albumId: Int, completion: @escaping (Result<[AlbumDetails], Error>) -> ()) {
         request(target: .readAlbumDetails(albumId: albumId), completion: completion)
     }
 }
