@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class ViewController: UIViewController {
+class ProfileVC: UIViewController {
 
     @IBOutlet weak var albumsTableView: UITableView!
     @IBOutlet weak var addressUser: UILabel!
@@ -55,8 +55,8 @@ class ViewController: UIViewController {
             index in
             self.albumsTableView.deselectRow(at: index, animated: true)
         }).disposed(by: bag)
-        self.albumsTableView.rx.modelSelected(Album.self).subscribe(onNext: {album in
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AlbumsVC") as! AlbumsVC
+        self.albumsTableView.rx.modelSelected(UserAlbum.self).subscribe(onNext: {album in
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AlbumDetailsVC") as! AlbumDetailsVC
             vc.dataId = album.id
             vc.title = album.title
             self.navigationController?.pushViewController(vc, animated: true)

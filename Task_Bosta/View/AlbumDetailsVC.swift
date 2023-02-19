@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import Kingfisher
 
-class AlbumsVC: UIViewController {
+class AlbumDetailsVC: UIViewController {
     
     var dataId: Int = 1
     @IBOutlet weak var collectionView: UICollectionView!
@@ -59,7 +59,7 @@ class AlbumsVC: UIViewController {
     */
 
 }
-extension AlbumsVC: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
+extension AlbumDetailsVC: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.frame.width / 3)
